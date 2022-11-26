@@ -22,17 +22,17 @@ script:
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
 
   #Tagging
-  - docker tag udagram-api-feed longtranz/udagram-api-feed:1.3.0
-  - docker tag udagram-api-user longtranz/udagram-api-user:1.2.0
-  - docker tag udagram-frontend longtranz/udagram-frontend:1.3.0
-  - docker tag udagram-reverseproxy longtranz/udagram-reverseproxy:1.0.0
+  - docker tag udagram-api-feed 987456321258789/udagram-api-feed:1.3.0
+  - docker tag udagram-api-user longt987456321258789ranz/udagram-api-user:1.2.0
+  - docker tag udagram-frontend 987456321258789/udagram-frontend:1.3.0
+  - docker tag udagram-reverseproxy 987456321258789/udagram-reverseproxy:1.0.0
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you to programmatically log in without having the password exposed in logs.
 after_success:
 # Push
 # Assuming DOCKER_PASSWORD and DOCKER_USERNAME are set in the Travis repository settings
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push longtranz/udagram-api-feed:1.3.0
-  - docker push longtranz/udagram-api-user:1.2.0
-  - docker push longtranz/udagram-frontend:1.3.0
-  - docker push longtranz/udagram-reverseproxy:1.0.0
+  - docker push 987456321258789/udagram-api-feed:1.3.0
+  - docker push 987456321258789/udagram-api-user:1.2.0
+  - docker push 987456321258789/udagram-frontend:1.3.0
+  - docker push 987456321258789/udagram-reverseproxy:1.0.0
