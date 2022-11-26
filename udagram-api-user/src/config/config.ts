@@ -24,6 +24,6 @@ export const config = {
     'secret': "hello",
   },
   'docker_username' : "docker_username",
-  'docker_password' : 'docker_password'
+  'docker_password' : "docker_password"
 };
 

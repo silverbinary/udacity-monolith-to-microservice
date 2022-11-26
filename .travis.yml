@@ -23,7 +23,7 @@ script:
 
   #Tagging
   - docker tag udagram-api-feed 987456321258789/udagram-api-feed:1.3.0
-  - docker tag udagram-api-user longt987456321258789ranz/udagram-api-user:1.2.0
+  - docker tag udagram-api-user 987456321258789/udagram-api-user:1.2.0
   - docker tag udagram-frontend 987456321258789/udagram-frontend:1.3.0
   - docker tag udagram-reverseproxy 987456321258789/udagram-reverseproxy:1.0.0
 
