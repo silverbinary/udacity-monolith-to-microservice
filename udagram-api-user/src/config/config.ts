@@ -23,5 +23,7 @@ export const config = {
   'jwt': {
     'secret': "hello",
   },
+  'docker_username' : "docker_username",
+  'docker_password' : 'docker_password'
 };
 
