@@ -44,4 +44,4 @@ set_env.sh
 configuration/aws-secret.yaml
 configuration/env-configmap.yaml
 configuration/env-secret.yaml
-configuration/test1.txt
+
