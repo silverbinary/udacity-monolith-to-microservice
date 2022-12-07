@@ -5,7 +5,7 @@ metadata:
   labels:
     app: reverseproxy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: reverseproxy
@@ -17,5 +17,18 @@ spec:
       containers:
       - name: reverseproxy
         image: 987456321258789/udagram-reverseproxy:latest
+        imagePullPolicy: Always 
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"
         ports:
         - containerPort: 8080
+      restartPolicy: Always
+
+
+
+    
